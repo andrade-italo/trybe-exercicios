@@ -1,0 +1,37 @@
+h1 {
+  color: orange;
+  font-size:65px;
+}
+ul {
+  background-color: orangered;
+}
+.list-style {
+  background-color: paleturquoise;
+}
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 200px;
+  text-decoration: line-through; 
+  
+}
+p {
+  font-weight: 600;
+  font-size: 3em;
+}
+body {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+}
+#pri {
+  background-color: yellow;
+}
+#se
+{
+  background-color: red;
+}
+#ter
+{
+  background-color: brown;
+}
