@@ -1,0 +1,30 @@
+div:hover {
+    border-style: groove;
+    transition:all;
+}
+.pri {
+    background-color: red;
+    text-decoration: underline;
+}
+.sec {
+    background-color: rgb(150, 150, 175);
+    font-size: large;
+}
+.tec {
+    background-color: green;
+    width: 100px 500px;
+    line-height: 100px;
+    font-size: 80px;
+}
+.clara {
+background-color: aqua;
+    font-family: monospace;
+}
+.escura{
+background-color: blue;  
+text-decoration:overline; 
+}
+
+.pri, .tec, .clara {
+    font-style: italic;
+}
