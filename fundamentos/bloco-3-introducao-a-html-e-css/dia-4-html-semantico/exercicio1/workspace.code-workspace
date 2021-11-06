@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../trybeCourse/andrade-italo.github.io"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../sd-018-b-project-lessons-learned"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sd-018-b-project-lessons-learned"
+	}
+}
