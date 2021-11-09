@@ -1,11 +1,8 @@
 var lista = []
 var x = 0
 
-while (true) {
+while (x<25) {
     x++
     lista.push(x);
-    if (x ==25) {
-        break
-    }
 }
 console.log(lista)

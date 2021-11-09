@@ -1,16 +1,13 @@
-var lista = []
 var lista1 = []
+var lista = []
 var x = 0
 
-while (true) {
+while (x<25) {
     x++
     lista.push(x);
-    if (x ==25) {
-        break
-    }
 }
-for (i in lista) {
-    lista1.push(lista[i]/2)
+for (i of lista) {
+    lista1.push(i/2)
 }
 
 console.log(lista1)
