@@ -19,3 +19,9 @@ quadradoVermelho.style.background = "white"
 // 04. Crie uma função que corrija o texto da tag <h1>.
 let h1 = document.getElementsByClassName("title")[0]
 h1.innerText = "Exercício 5.1 - JavaScript"
+
+// 05. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+let p = document.getElementsByTagName("p")
+for (let x of p) {
+  x.style.textTransform = "uppercase"
+}
