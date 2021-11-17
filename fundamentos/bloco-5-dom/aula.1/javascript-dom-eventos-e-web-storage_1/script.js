@@ -25,3 +25,6 @@ let p = document.getElementsByTagName("p")
 for (let x of p) {
   x.style.textTransform = "uppercase"
 }
+
+// 06. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+console.log(p)
