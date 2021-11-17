@@ -8,9 +8,12 @@
 		},
 		{
 			"path": "../../../../../sd-018-b-project-lessons-learned"
+		},
+		{
+			"path": "../../../../../sd-018-b-project-playground-functions"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "sd-018-b-project-lessons-learned"
+		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios"
 	}
 }
