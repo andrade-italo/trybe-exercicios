@@ -11,9 +11,13 @@
 		},
 		{
 			"path": "../../../../../sd-018-b-project-playground-functions"
+		},
+		{
+			"path": "../../../../../trybeCourse/piramide/exercise-end-block5"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios"
+		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios",
+		"liveServer.settings.port": 5501
 	}
 }
