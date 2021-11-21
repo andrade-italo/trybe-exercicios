@@ -11,6 +11,7 @@ fundo.appendChild(setFundo)
 
 let btnFundo = document.createElement('button')
 btnFundo.id = 'btnFundo'
+btnFundo.innerText = 'OK'
 fundo.appendChild(btnFundo)
 
 
@@ -24,6 +25,7 @@ cor.appendChild(setCor)
 
 let btnCor = document.createElement('button')
 btnCor.id = 'btnCor'
+btnCor.innerText = 'OK'
 cor.appendChild(btnCor)
 
 //Tipo da fonte;
@@ -36,6 +38,7 @@ fonte.appendChild(setFonte)
 
 let btnFonte = document.createElement('button')
 btnFonte.id = 'btnFonte'
+btnFonte.innerText = "OK"
 fonte.appendChild(btnFonte)
 
 
@@ -51,6 +54,7 @@ tamanho.appendChild(setTamanho)
 
 let btnTamanho = document.createElement('button')
 btnTamanho.id = 'btnTamanho'
+btnTamanho.innerText = 'OK'
 tamanho.appendChild(btnTamanho)
 
 
@@ -65,6 +69,7 @@ linha.appendChild(setLinha)
 
 let btnLinha = document.createElement('button')
 btnLinha.id = 'btnLinha'
+btnLinha.innerText = 'OK'
 linha.appendChild(btnLinha)
 
 
@@ -80,13 +85,13 @@ function caixaBotaoTam(botoes, y, z) {
 
 let botoes = document.getElementsByTagName('button')
 let caixas = document.getElementsByTagName('input')
-caixaBotaoTam(botoes, '15px', '20px')
+caixaBotaoTam(botoes, '40px', '26px')
 caixaBotaoTam(caixas, '400px', '20px')
 
 
 //faz funcionar tudo
 function space() {
-    body.style.lineHeight = setLinha.value
+    body.style.lineHeight = `${setLinha.value}px`
     localStorage.setItem('Espaçamento das linhas', body.style.lineHeight)
     setLinha.value = ''
 }
@@ -103,7 +108,7 @@ function corDaLetra() {
     setCor.value = ''
 }
 function tam() {
-    body.style.fontSize = setTamanho.value
+    body.style.fontSize = `${setTamanho.value}pt`
     localStorage.setItem('Tamanho da letra', body.style.fontSize)
     setTamanho.value = ''
 }
@@ -135,5 +140,6 @@ if (localStorage.getItem('Cor de fundo') !== null){
     body.style.background = localStorage.getItem('Cor de fundo')
 }
 if (localStorage.getItem('Espaçamento das linhas') !== null){
-    body.style.height = localStorage.getItem('Espaçamento das linhas')
+    body.style.lineHeight = localStorage.getItem('Espaçamento das linhas')
 }
+console.log(localStorage.getItem('Espaçamento das linhas'))
