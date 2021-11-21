@@ -205,7 +205,7 @@ function adicionei() {
 function adicioneiEnter(event) {
   if (event.key === 'Enter' && compromisso.value.length === 0) {
     alert('Nenhum caracter inserido')
-  } else if (event.key === 'Enter'){
+  } else if (event.key === 'Enter') {
     let temQueAdc = document.createElement('li')
     temQueAdc.innerText = compromisso.value
     taskeiNaList.appendChild(temQueAdc)
