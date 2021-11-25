@@ -14,10 +14,19 @@
 		},
 		{
 			"path": "../../../../../trybeCourse/piramide/exercise-end-block5"
+		},
+		{
+			"path": "../../../../../sd-018-b-project-pixels-art"
+		},
+		{
+			"path": "../../../../../sd-018-b-project-todo-list"
+		},
+		{
+			"path": "../../../../../sd-018-b-project-meme-generator"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios",
+		"liveServer.settings.multiRootWorkspaceName": "sd-018-b-project-meme-generator",
 		"liveServer.settings.port": 5501
 	}
 }

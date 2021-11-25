@@ -132,6 +132,7 @@ function aleatoria(tarefa) {
   myTasks.appendChild(aleatorio)
 }
 aleatoria("Escovar dentes")
+aleatoria('beber agua')
 
 /*Implemente uma função que adiciona uma legenda com cor para a tarefa criada no 
 exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e 
@@ -147,6 +148,7 @@ function colorir(cor) {
 }
 
 colorir("red")
+colorir('green')
 
 /*Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag 
 <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected, 
@@ -154,31 +156,39 @@ ou seja, quando sua tarefa possuir a classe task selected , ela estará selecion
 Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou 
 seja, esta tarefa está deixando de ser uma tarefa selecionada.*/
 
-let taskei = document.querySelector('.task')
-taskei.addEventListener('click', clickInOut)
-
+let taskei = document.querySelectorAll('.task')
+for (x of taskei) {
+  x.addEventListener('click', clickInOut)
+}
 function clickInOut(event) {
   if (event.target.className === 'task selected') {
-    taskei.className = 'task'
+    event.target.className = 'task'
   } else {
-    taskei.className = 'task selected'
+    event.target.className = 'task selected'
   }
 }
 
 /*Implemente uma função que adiciona um evento que, ao clicar em um dia do mês, atribua
 a este dia a cor da legenda da sua tarefa selecionada. Ao clicar novamente no dia com 
 a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .*/
-let setCor = 'orange'
-days.addEventListener('click', colorDay)
 
-function colorDay(event) {
-  if (event.target.style.color === setCor) {
-    event.target.style.color = 'rgb(119,119,119)'
-  } else {
-    event.target.style.color = setCor
-  }
+let tasks = document.querySelectorAll('.task')
+for (x of taskei) {
+  x.addEventListener('click', function (event) {
+    if (x.className === 'task selected') {
+      let setCor = event.target.style.background
+      days.addEventListener('click', colorDay)
+
+      function colorDay(event) {
+        if (event.target.style.color === setCor) {
+          event.target.style.color = 'rgb(119,119,119)'
+        } else {
+          event.target.style.color = setCor
+        }
+      }
+    }
+  })
 }
-
 /*Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS",
 adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR". Se nenhum
 caractere for inserido no campo input, a função deve retornar um alert com uma mensagem
