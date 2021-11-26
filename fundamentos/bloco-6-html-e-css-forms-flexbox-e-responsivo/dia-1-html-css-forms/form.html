@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form action="" method="get" id="formulario">
       <h1>Curriculo</h1>
       <fieldset>
         <label for="name"
@@ -40,11 +41,11 @@
         >
         <br />
         <label for="casa"
-          ><input type="radio" name="residencia" required id="casa" />
+          ><input type="radio" name="residencia" required id="casa" value="Casa"/>
           Casa</label
         >
         <label for="ap"
-          ><input type="radio" name="residencia" required id="ap" />
+          ><input type="radio" checked name="residencia" required id="ap" value="Apartamento"/>
           Apartamento</label
         >
         <br />
@@ -83,16 +84,10 @@
         <br />
         <br />
         <input type="reset" value="Limpar" />
-        <input type="submit" />
+        <input type="submit" id="enviar" />
       </fieldset>
     </form>
+    <div id="dados"></div>
+    <script src="script.js"></script>
   </body>
 </html>
-
-
-Logo abaixo do formulário, crie um botão que:
-Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit
-Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
-Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
-Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
-Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
