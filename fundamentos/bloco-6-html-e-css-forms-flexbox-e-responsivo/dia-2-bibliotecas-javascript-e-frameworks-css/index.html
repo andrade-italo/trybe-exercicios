@@ -1,17 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <h1>Coisa linda demais</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <form action="" method="get" id="formulario">
+      <h1>Curriculo</h1>
+      <fieldset>
+        <label class="form-group" for="name"
+          >Nome:<input
+            class="form-control"
+            type="text"
+            maxlength="40"
+            required
+            id="name"
+        /></label>
+        <br />
+        <label class="form-group" for="email"
+          >Email:<input
+            class="form-control"
+            type="email"
+            required
+            id="email"
+            maxlength="50"
+        /></label>
+        <br />
+        <label class="form-group" for="cpf"
+          >Cpf: <br />
+          <input type="text" id="cpf" required maxlength="11" />
+        </label>
+        <br />
+        <label class="form-group" for="endereco"
+          >Endereço: <br />
+          <input type="text" id="endereco" required maxlength="200"
+        /></label>
+        <br />
+        <label class="form-group" for="cidade"
+          >Cidade: <br /><input type="text" maxlength="28" required
+        /></label>
+        <br />
+        <label class="form-group" for="estado"
+          >Estado: <br />
+          <select class="form-control" name="estado" id="estado" required>
+            <option value="">Todos os estados do Brasil</option>
+            <option value="">Rio de Janeiro</option>
+          </select></label
+        >
+        <br />
+        <label class="form-group" for="casa"
+          ><input
+            type="radio"
+            name="residencia"
+            required
+            id="casa"
+            value="Casa"
+          />
+          Casa</label
+        >
+        <br>
+        <label class="form-group" for="ap"
+          ><input
+            type="radio"
+            checked
+            name="residencia"
+            required
+            id="ap"
+            value="Apartamento"
+          />
+          Apartamento</label
+        >
+        <br />
+      </fieldset>
+      <fieldset>
+        <br>
+        <p>Dados do ultimo emprego</p>
+        <p>Resumo do curriculo:</p>
+        <textarea class="form-control"
+          name="resumo"
+          id="resumo"
+          cols="30"
+          rows="10"
+          required
+          maxlength="1000"
+        ></textarea>
+        <br />
+        <br />
+        <label for="cargo"
+          >Cargo: <input type="text" id="cargo" maxlength="40" required
+        /></label>
+        <br />
+        <p>Descrição do cargo:</p>
+        <textarea class="form-control"
+          id="descricao"
+          required
+          maxlength="500"
+          name="descricao"
+          cols="30"
+          rows="3"
+        ></textarea>
+        <br />
+        <label for="data-inicio"
+          >Data de inicio: <input type="date" required id="data-inicio"
+        /></label>
+        <br />
+        <br />
+        <input type="reset" value="Limpar" />
+        <input class="btn btn-sucess" type="submit" id="enviar" />
+      </fieldset>
+    </form>
+    <div id="dados"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
