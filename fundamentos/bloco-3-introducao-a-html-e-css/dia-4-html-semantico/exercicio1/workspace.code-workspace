@@ -29,7 +29,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "exercise-tech-gallery",
+		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios",
 		"liveServer.settings.port": 5501
 	}
 }
