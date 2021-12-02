@@ -82,9 +82,21 @@
 }
 
 @media print {
+  #content {
+    width: 100%;
+  }
   #header,
   #navigation,
   #footer {
     display: none;
   }
+  #aside {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    height: max-content;
+  }
+}
+@media screen and (max-width: 400px) {
+    
 }
