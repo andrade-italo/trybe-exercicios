@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body {
+  font-size: large;
+  margin: 3%;
+}
+h1 {
+  font-size: xx-large;
+  margin: 2%;
+}
+h2 {
+  margin: 2%;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 3%;
+  margin: 2%;
+}
+
+p {
+  margin: 2%;
+}
+
+figure {
+}
+
+figcaption {
+  margin-left: 2%;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: blue;
+    font-size: medium;
+  }
+  figure {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+      width: 40%;
+      margin: 0 0 2% 5%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: yellowgreen;
+        font-size:small;
+        max-width: 1080px;
+      }
+}
