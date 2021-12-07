@@ -26,10 +26,13 @@
 		},
 		{
 			"path": "../../../../../exercise-tech-gallery"
+		},
+		{
+			"path": "../../../../../sd-018-b-project-trybewarts"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "trybe-exercicios",
+		"liveServer.settings.multiRootWorkspaceName": "sd-018-b-project-trybewarts",
 		"liveServer.settings.port": 5501
 	}
 }
