@@ -94,13 +94,15 @@ console.log(soma);
 /* Crie uma função que deverá retornar um objeto que representa o relatório do 
 professor, as aulas que ele ou ela ministrou e o número total de estudantes. */
 const createReport = (obj, prof) => {
-    let italo = {}
+  const allLess = [];
+  let allStudent = 0;
   for (let i in array) {
     if (obj[array[i]].professor === prof) {
-      italo = Object.assign({}, obj[array[i]].materia, obj[array[i]].numeroEstudantes)
+      allLess.push(obj[array[i]].materia);
+      allStudent += obj[array[i]].numeroEstudantes;
     }
-    return italo
   }
+  return {Professor: prof, lessons: allLess, estudantes: allStudent };
 };
 
 console.log(createReport(allLessons, "Maria Clara"));
