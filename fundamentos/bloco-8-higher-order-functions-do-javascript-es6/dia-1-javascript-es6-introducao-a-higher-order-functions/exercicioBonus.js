@@ -93,6 +93,7 @@ const gameActions = {
       return dragon.healthPoints;
     })(),
   },
+
   MageTurn: {
     MageDamage: (function dano() {
       obj();
@@ -102,6 +103,7 @@ const gameActions = {
     MageMana: mage.mana,
     DragonHealth: dragon.healthPoints,
   },
+
   MonsterTurn: {
     MonsterDamage: (function monster() {
       danoDragon();
@@ -112,10 +114,10 @@ const gameActions = {
     WarriorHealth: warrior.healthPoints,
     MageHealth: mage.healthPoints,
   },
-  battleMembers: battleMembers
+  
+  battleMembers: battleMembers,
 };
 console.log(gameActions);
-
 
 //Essa parte é um codigo mais limpo, porem não proporciona a vizualização por turnos.
 /* const gameActions = {
