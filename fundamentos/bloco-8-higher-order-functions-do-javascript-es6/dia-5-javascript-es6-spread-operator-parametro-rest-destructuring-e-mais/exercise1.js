@@ -143,5 +143,30 @@ const yearSeasons = {
     autumn: ['September', 'October', 'November'],
     winter: ['December', 'January', 'February'],
   };
-const meses = ({spring, summer, autumn, winter}) => [...spring, ...summer, ...autumn, ...winter]
+const meses = ({spring, summer, autumn, winter}) => [...spring, ...summer, ...autumn-, ...winter]
 console.log(meses(yearSeasons))
+
+
+
+
+
+function getSpeciesByIds(ids) {
+  expected.find((primeiro) => primeiro.id === ids)
+}
+
+const expected = [{
+  id: '0938aa23-f153-4937-9f88-4858b24d6bce',
+  name: 'lions',
+  popularity: 4,
+  location: 'NE',
+  availability: ['Tuesday', 'Thursday', 'Saturday', 'Sunday'],
+  residents: [
+    { name: 'Zena', sex: 'female', age: 12 },
+    { name: 'Maxwell', sex: 'male', age: 15 },
+    { name: 'Faustino', sex: 'male', age: 7 },
+    { name: 'Dee', sex: 'female', age: 14 },
+  ],
+}];
+
+const actual = getSpeciesByIds('0938aa23-f153-4937-9f88-4858b24d6bce');
+console.log(actual)
