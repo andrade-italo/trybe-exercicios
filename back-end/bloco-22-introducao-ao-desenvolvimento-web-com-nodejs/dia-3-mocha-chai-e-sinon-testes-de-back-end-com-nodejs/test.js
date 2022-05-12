@@ -14,4 +14,7 @@ describe('teste se: ', () => {
     it('Quando o número passado for 0 deverá retornar "neutro"', ()=> {
         expect(poloFind(0)).equals('Neutro');
     })
+    it('Quando o parametro não for número, deverá retornar "Is not a number"', ()=> {
+        expect(poloFind('potato')).equals("Is not a number");
+    })
 })
