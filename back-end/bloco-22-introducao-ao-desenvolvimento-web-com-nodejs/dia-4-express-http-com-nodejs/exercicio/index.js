@@ -19,6 +19,10 @@ app.post("/greetings", function (req, res) {
   res.status(200).json({ message: `Hello, ${name}` });
 });
 
+app.put("/users/:name/:age", function (req, res) {
+    const { name, age } = req.params;
+    res.status(401).json({ message: `Seu nome é ${name} e você tem ${age} anos` });
+});
 
 app.listen(3001, () => {
   console.log("Aplicação ouvindo na porta 3001");
